@@ -15,6 +15,7 @@ class Pen {
 
     Pen() {
         System.out.println("I'm Constructor");
+        System.out.println("Theres No use of Destructor in Array");
     }
 }
 
