@@ -1,35 +1,29 @@
 package OOP;
 
-/**
- * ClassfromOOP
- */
+class Car {
+    String Name;
+    String Model;
 
-class Pen {
-    String type;
-    String color;
+    public void myFunc() {
+        System.out.println("The " + this.Model + " Model" + " " + this.Name + " is Speeding.");
 
-    public void myMethod() {
-        System.out.println("Color of this Pen is : " + this.color + " And " +
-                " Type of This Pen is : " + this.type + "\n");
     }
 
-    Pen() {
-        System.out.println("I'm Constructor");
-        System.out.println("Theres No use of Destructor in Array");
+    Car() {
+        System.out.println("This Is A Constructor and will be called everytime an object is created");
     }
 }
 
 public class ClassfromOOP {
-
     public static void main(String[] args) {
-        System.out.println("Creating Object");
-        Pen pen1 = new Pen();
-        pen1.type = "Ballpoint";
-        pen1.color = "Teal";
-        pen1.myMethod();
-        Pen pen2 = new Pen();
-        pen2.type = "Pointer";
-        pen2.color = "Black";
-        pen2.myMethod();
+        // System.out.println("will Create OBject");
+        Car myobj = new Car();
+        myobj.Name = "Toyota Corolla";
+        myobj.Model = "2016";
+        myobj.myFunc();
+        Car myobj2 = new Car();
+        myobj2.Name = "Ford";
+        myobj2.Model = "2020";
+        myobj2.myFunc();
     }
 }
