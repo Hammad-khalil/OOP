@@ -1,5 +1,7 @@
 package OOP;
 
+// PolyMorphism has two types Function Overloading and Function Overiding and below we will use function overloading and we'll use overriding after learning Inheritance.
+
 class Calculator {
     int add(int a, int b) {
         return a + b;
