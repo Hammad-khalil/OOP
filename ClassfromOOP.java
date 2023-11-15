@@ -10,6 +10,8 @@ class Car {
     }
 
     Car(String Name, String Model) {
+        // In below line this.Name represents class Car Name and Name at the right of =
+        // represents parameter represents in Constructor
         this.Name = Name;
         this.Model = Model;
         // We can use Constructor to initialize variables of declared from Class and
