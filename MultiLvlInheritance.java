@@ -1,15 +1,15 @@
 package OOP;
 
-class Shape {
+class Form {
     String color;
     String type;
 
-    public void shapeDisplay() {
-        System.out.println("Color of this Shape is : " + this.color + " Type of this Shape is : " + this.type);
+    public void FormDisplay() {
+        System.out.println("Color of this Form is : " + this.color + " Type of this Form is : " + this.type);
     }
 }
 
-class Triangle extends Shape {
+class Circle extends Form {
 
 }
 
@@ -17,9 +17,9 @@ public class MultiLvlInheritance {
     public static void main(String[] args) {
         System.out.println(
                 "This is Multi lvl inheritance where one derived class inherit properties of another derived class");
-        Triangle myobj = new Triangle();
+        Circle myobj = new Circle();
         myobj.color = "Purple";
         myobj.type = "2D";
-        myobj.shapeDisplay();
+        myobj.FormDisplay();
     }
 }
