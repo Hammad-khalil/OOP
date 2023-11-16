@@ -1,5 +1,7 @@
 package OOP;
 
+import OOP.bank.*;;
+
 class Car {
     String Name;
     String Model;
@@ -33,5 +35,10 @@ public class ClassfromOOP {
         // myobj2.Name = "Ford";
         // myobj2.Model = "2020";
         myobj2.myFunc();
+
+        // using Custom package here
+        Bank myAccount = new Bank("Online");
+        myAccount.type = "online Account";
+        System.out.println(myAccount.type);
     }
 }
