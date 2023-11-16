@@ -4,6 +4,7 @@ package OOP;
   This is an Example of Multi Level Inheritance,
   where Circle inherits properties of Form and then Rectangle inherits properties
   of Circle which was inherited by Circle from Form itself :>
+  ☠☠☠
 */
 class Form {
     String color;
