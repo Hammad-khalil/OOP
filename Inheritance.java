@@ -1,32 +1,20 @@
 package OOP;
 
-// Inheritance
-// "Inheritance is when one class uses properties of other class, we can see inherits properties of another class " "Properties are which we name after variable like in String color , we defined color and it is an example of properties"
-class Vehicle {
+class Shape {
     String color;
-    String model;
-
-    void start() {
-        System.out.println("Vehicle Started");
-    }
-
-    void stop() {
-        System.out.println("Vehicle Stopped");
-    }
 }
 
-class Car extends Vehicle {
+class Triangle extends Shape {
 
-    void accelerate() {
-        System.out.println("Car is Accelerating");
-    }
 }
 
+// This is an Example of Single Level Inheritance where one derived class uses
+// properties of one Base Class
 public class Inheritance {
     public static void main(String[] args) {
-        System.out.println("Inheritance");
-        Vehicle myobj = new Vehicle();
-        myobj.start();
-        myobj.stop();
+        System.out.println("Object Of Triangle will take Shape class Properties");
+        Triangle obj = new Triangle();
+        obj.color = "Red";
+        System.out.println(obj.color);
     }
 }
