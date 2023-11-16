@@ -1,5 +1,6 @@
 package OOP;
 
+// This is BAse ClasS
 class Shape {
     String color;
 
@@ -8,6 +9,7 @@ class Shape {
     }
 }
 
+// This is a derived class and will use Base Class to Display the color
 class Triangle extends Shape {
 
 }
