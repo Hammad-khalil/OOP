@@ -27,7 +27,7 @@ class Rectangle extends Form {
 public class Hierarchicalinheritance {
     public static void main(String[] args) {
         System.out.println(
-                "This is Multi lvl inheritance where one derived class inherit properties of another derived class");
+                "This is Hierarchical inheritance where both derived class inherit properties of another derived class");
         Circle myobj = new Circle();
         myobj.color = "Purple";
         myobj.type = "2D";
