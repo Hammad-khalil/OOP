@@ -1,6 +1,6 @@
 package OOP;
 
-class Car {
+class Vehicle {
     private String wheel;
     // private String Engine;
     // private Boolean Light;
@@ -17,7 +17,7 @@ class Car {
 public class Encapsulating {
     public static void main(String[] args) {
         System.out.println("Starting Encapsulation");
-        Car mywheel = new Car();
+        Vehicle mywheel = new Vehicle();
         mywheel.setwheel("Continental Tyres");
         System.out.println("The Wheel is" + mywheel.getwheel());
     }
