@@ -1,0 +1,101 @@
+Key Points:
+Abstract Base Class BasicShape:
+
+It has a private variable area to store the area of shapes.
+It has a method getArea to return the value of area.
+It has an abstract method calcArea.
+Class Circle (Derived from BasicShape):
+
+It has private variables centerX, centerY, and radius.
+It has a constructor accepting values for centerX, centerY, and radius.
+It overrides calcArea to calculate and set the area of the circle.
+Class Rectangle (Derived from BasicShape):
+
+It has private variables width and length.
+It has a parameterized constructor accepting values for width and length.
+It overrides calcArea to calculate and set the area of the rectangle.
+Main Class:
+
+Create objects of Circle and Rectangle.
+Demonstrate that each object properly calculates and reports its area.
+Java Code:
+java
+Copy code
+// Step 1: Abstract Base Class BasicShape
+abstract class BasicShape {
+    private double area;
+
+    public double getArea() {
+        return area;
+    }
+
+    // Abstract method
+    public abstract void calcArea();
+}
+
+// Step 2: Circle Class
+class Circle extends BasicShape {
+    private long centerX, centerY, radius;
+
+    // Constructor
+    public Circle(long centerX, long centerY, long radius) {
+        this.centerX = centerX;
+        this.centerY = centerY;
+        this.radius = radius;
+        calcArea();
+    }
+
+    // Override calcArea
+    @Override
+    public void calcArea() {
+        // Area of circle = π * radius * radius
+        super.area = 3.14159 * radius * radius;
+    }
+}
+
+// Step 3: Rectangle Class
+class Rectangle extends BasicShape {
+    private double width, length;
+
+    // Parameterized Constructor
+    public Rectangle(double width, double length) {
+        this.width = width;
+        this.length = length;
+        calcArea();
+    }
+
+    // Override calcArea
+    @Override
+    public void calcArea() {
+        // Area of rectangle = length * width
+        super.area = length * width;
+    }
+}
+
+// Step 4: Main Class
+public class Main {
+    public static void main(String[] args) {
+        // Step 5: Demonstrate the classes
+        Circle circle = new Circle(0, 0, 5);
+        Rectangle rectangle = new Rectangle(4, 6);
+
+        // Output the areas
+        System.out.println("Circle Area: " + circle.getArea());
+        System.out.println("Rectangle Area: " + rectangle.getArea());
+    }
+}
+Tricks for Extracting Key Information:
+Identify Classes:
+
+Look for terms like "class," "base class," or "derived class."
+Note down the properties and behaviors mentioned for each class.
+Constructor Information:
+
+Identify the constructor and its parameters for each class.
+Override Information:
+
+Look for methods that need to be overridden in derived classes.
+Usage Information:
+
+Identify how the objects are supposed to be used or demonstrated.
+By focusing on these key points, you can create a mental map of the problem and then translate it into code. Remember to keep it simple and gradually add complexity as needed.
